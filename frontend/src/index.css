@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Mango Grotesque';
+  src: url('/fonts/MangoGrotesque.woff2') format('woff2'),
+       url('/fonts/MangoGrotesque.ttf') format('truetype'),
+       url('https://db.onlinewebfonts.com/t/0d7c90bf2d5c8dcc4fa27a5ba6cbad81.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sunshine';
+  src: local('Sunshiney'), url('https://fonts.gstatic.com/s/sunshiney/v18/2sDFZG98dE2qGz_d3N6qB2m8.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oval';
+  src: local('Comfortaa'), local('Fredoka'), local('Outfit');
+  font-weight: 400 800;
+  font-style: normal;
+}
+
+:root {
+  /* Color System - Premium Light Theme (Scandinavian / Apple / Airbnb Inspired) */
+  --bg-primary: #EAEDF0;
+  --bg-secondary: #F5F7F9;
+  --bg-card: #FFFFFF;
+  --bg-elevated: #F8FAFC;
+
+  --accent-primary: #5D7FA3;
+  --accent-secondary: #89A9C6;
+  --accent-light: #EBF2F8;
+  --accent-glow: rgba(93, 127, 163, 0.20);
+  --accent-glow-subtle: rgba(93, 127, 163, 0.08);
+
+  --text-primary: #1B2635;
+  --text-secondary: #556273;
+  --text-muted: #8A96A3;
+
+  --border: #D8DEE6;
+  --border-strong: #C4CBD5;
+  --divider: #E3E7EC;
+
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(216, 222, 230, 0.8);
+  --glass-shadow: 0 10px 30px -5px rgba(27, 38, 53, 0.06), 0 2px 6px rgba(27, 38, 53, 0.03);
+
+  /* Typography */
+  --font-mango: "Mango Grotesque", "MangoGrotesque", sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Sora", sans-serif;
+  --font-mono: "IBM Plex Mono", SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-sunshine: "Sunshine", "Sunshiney", cursive, fantasy, sans-serif;
+  --font-oval: "Oval", "Comfortaa", "Fredoka", "Outfit", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--text-primary);
+  margin: 0;
+  letter-spacing: -0.025em;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+::selection {
+  background: var(--accent-primary);
+  color: #FFFFFF;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-secondary);
+}

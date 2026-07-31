@@ -1,0 +1,22 @@
+# Dependencies
+node_modules
+
+# Secrets — never commit real credentials
+.env
+.env.local
+.env.*.local
+
+# Local SQLite artifact (if present from earlier setup)
+itineraries.db
+itineraries.db-journal
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store

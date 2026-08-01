@@ -2,7 +2,6 @@
 
 An AI-powered trip planner that generates day-by-day itineraries for Indian destinations, grounded in **real, verified locations** (not AI-hallucinated place names) via Google Places, with an interactive map, a conversational AI copilot for refining your plan, and persistent trip history.
 
-> 🚧 Replace this line with a one-sentence pitch + a hero screenshot/GIF once you have one — it's the first thing anyone sees on your repo.
 
 ---
 

@@ -52,8 +52,8 @@ An AI-powered trip planner that generates day-by-day itineraries for Indian dest
 
 ## 🚀 Live Demo
 
-- Frontend: `https://your-app.vercel.app` <!-- 🚧 replace with your real Vercel URL -->
-- Backend API: `https://your-app.onrender.com` <!-- 🚧 replace with your real Render URL -->
+- Frontend: https://rahi-ai-trip-planner.vercel.app/
+- Backend API: https://rahi-ai-trip-planner.onrender.com
 
 > Note: the backend runs on Render's free tier, which sleeps after 15 minutes of inactivity. The first request after idle time may take 30–60 seconds while it wakes up.
 
